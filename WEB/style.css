@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Oleo+Script+Swash+Caps:wght@700&display=swap");
+/* ########## * RESET ############## */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1;
+}
+/* ########## * Defaults ############## */
+nav,
+header,
+footer {
+  display: block;
+}
+
+/* ########## * nav bar ############## */
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li {
+  list-style: none;
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+ul.topnav li.topnav-right {
+  float: left;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  min-height: 15px;
+  cursor: pointer;
+}
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  min-height: 16px;
+  padding: 14px;
+}
+
+.main-container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/droinetech/WEB/myImages/pic-3.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 2%;
+  padding-right: 4%;
+  box-sizing: border-box;
+}
+ul.topnav li a:hover {
+  text-decoration: 1px underline red;
+}
+.dropdownIcon {
+  display: none;
+}
+/* ########## * NAV BAR ENDS  ############## */
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after {
+  display: flex;
+  clear: both;
+  content: "";
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+h1.home {
+  font-size: 3rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  display: block;
+  text-align: center;
+}
+p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-height: 25px;
+  font-family: "Neuton", serif;
+  word-spacing: 2px;
+  display: block;
+  text-align: center;
+}
+.button {
+  width: 90px;
+  height: 90px;
+  font-size: 55px;
+  font-weight: 900;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+}
+.home-container {
+  margin-top: 4rem;
+}
+.col-6 {
+  margin-top: 6rem;
+}
+.card {
+  margin-top: 12rem;
+}
+
+.card-1 {
+  max-width: 250px;
+  width: 100%;
+  height: 150px;
+  display: block;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  margin-left: 1rem;
+  margin-top: 56px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Neuton", serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/droinetech/WEB/myImages/pic-8.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+.card-2 {
+  max-width: 250px;
+  width: 100%;
+  height: 150px;
+  display: block;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Neuton", serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/droinetech/WEB/myImages/pic-4.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+
+h5 {
+  color: #000;
+  text-shadow: 0 0 9px #fff;
+  font-family: "Neuton", serif;
+  font-size: 1.2rem;
+}
+.card-1 p,
+.card-2 p {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  font-size: 15px;
+  font-family: "Neuton", serif;
+  display: block;
+  text-align: center;
+}
+.card-1:hover,
+.card-2:hover {
+  transform: translateX(-15px);
+}
+button:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+/* ########### service ############ */
+h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.text-box {
+  margin-bottom: 90px;
+  margin-top: 12rem;
+  margin-left: 65px;
+}
+.col-3 h4 {
+  text-align: center;
+}
+div.box {
+  text-align: center;
+  margin: 24px;
+}
+.img-1 {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/phone-1.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+.img-2 {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/laptop-3.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+.img-3 {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/acessory-1.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+.img-4 {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/part-2.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: auto;
+}
+/* ############### market ############## */
+
+.market h2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.market-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 280px;
+  position: absolute;
+  top: 0;
+  left: 3.93rem;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.layer:hover {
+  background: rgba(266, 0, 0, 0.7);
+}
+.layer h2 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h2 {
+  bottom: 49%;
+  opacity: 1;
+}
+.img-1-mar {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/tall-1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+.img-2-mar {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/tall-2.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+.img-3-mar {
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/tall-5.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+/* ########### engineer ################# */
+header.header-eng {
+  margin-top: 9rem;
+}
+.box-eng h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+.box-eng p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.img-eng-1 {
+  max-width: 280px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/pic-2.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+.img-eng-2 {
+  max-width: 280px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-image: url(/droinetech/WEB/myImages/pic-4.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+/* ########### contact ############## */
+.container-contact {
+  width: 100%;
+  margin: 75px 0;
+}
+.text-contact {
+  padding: 15px;
+  margin: 45px 0;
+}
+.text-contact h1 {
+  font-size: 36px;
+  color: #fff;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-shadow: 0 0 5px #ccc;
+}
+.text-contact p {
+  font-size: 19px;
+  color: #fff;
+  font-family: "Neuton", serif;
+}
+.img-con {
+  width: 90%;
+  height: 290px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/droinetech/WEB/myImages/pic-8.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+.contact-btn {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 36px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: rgb(240, 119, 119);
+}
+.contact-btn:hover {
+  background-color: #f00;
+}
+/* ############# form ############## */
+.form-container form {
+  width: 90%;
+  margin: 4rem 0;
+  text-align: left;
+  margin-left: 15px;
+}
+.form-container button {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+input {
+  width: 400px;
+  min-width: 100px;
+  padding: 10px;
+  outline: none;
+}
+label {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Neuton", serif;
+}
+.submit {
+  width: 250px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: rgb(63, 56, 56);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.submit:hover {
+  background-color: #000;
+}
+
+/* ############# about ############ */
+.container-about {
+  width: 90%;
+  height: 90%;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.text-about h5 {
+  font-size: 45px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  padding-top: 40px;
+}
+.text-about p {
+  color: #000;
+  padding-top: 35px;
+}
+.text-about span {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+span i {
+  color: #f00;
+}
+/* ############## icons ################ */
+.icons {
+  padding: 45px;
+  margin: 25px 0;
+}
+.fa-brands {
+  margin-left: 25px;
+  font-size: 56px;
+}
+.fa-facebook {
+  color: rgb(52, 58, 227);
+}
+.fa-instagram {
+  color: rgb(253, 0, 116);
+}
+.fa-linkedin {
+  color: rgb(10, 102, 194);
+}
+.fa-twitter {
+  color: rgb(27, 152, 228);
+}
+.fa-android {
+  color: rgb(240, 119, 119);
+}
+/* ########## * MOBILE   ############## */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+  }
+  .nav-container {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.topnav li.topnav-right {
+    position: relative;
+  }
+  .col-3 {
+    width: 100%;
+    margin: 0;
+  }
+  div .col-6,
+  div .col-3 {
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+  .card {
+    display: block;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .row::after {
+    flex-direction: column;
+  }
+  p {
+    flex-wrap: wrap;
+  }
+  button.contact-btn {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+  }
+  .submit {
+    max-width: 250px;
+    width: 100%;
+  }
+  input {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+  }
+  .container-contact {
+    width: 100%;
+    max-width: 300px;
+  }
+  .text-box {
+    margin: auto;
+    margin-bottom: 30%;
+  }
+  .market-col {
+    flex-basis: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .layer:hover {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  h1.home {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .form-container button {
+    margin: auto;
+  }
+  .icons .fa {
+    text-align: left;
+  }
+}
+/* ########## MOBILE ENDS ########## */
